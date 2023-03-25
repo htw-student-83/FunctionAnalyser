@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">FunctionAnalyser</string>
+    <string name="error_message">invalid number!</string>
+    <string name="error_message2">not a number!</string>
+    <string name="oder">|</string>
+    <string name="zwei">2</string>
+    <string name="_2">2</string>
+    <string name="_1">1</string>
+    <string name="the_biggest_exponent_is">The biggest exponent is?</string>
 </resources>

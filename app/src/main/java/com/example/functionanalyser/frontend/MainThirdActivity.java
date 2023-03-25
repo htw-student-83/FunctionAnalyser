@@ -1,14 +1,16 @@
-package com.example.functionanalyser;
+package com.example.functionanalyser.frontend;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class QuestionExpo extends AppCompatActivity {
+import com.example.functionanalyser.R;
+
+public class MainThirdActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_question_expo);
+        setContentView(R.layout.activity_main_third);
     }
 }
