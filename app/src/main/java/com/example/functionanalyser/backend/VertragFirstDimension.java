@@ -1,10 +1,10 @@
 package com.example.functionanalyser.backend;
 
 public interface VertragFirstDimension {
-    double calculateTheIntersectionWithXaxis(double steigung, double n);
+    String calculateTheIntersectionWithXaxis(double steigung, double n);
     double calculateTheGradient(double gradient_f);
     String calculateTheParallelFunction(double gradient_f1, double x, double y);
-    double calculateTheIntersectionWithYaxis(double intersection_yAxis_f);
+    String calculateTheIntersectionWithYaxis(double intersection_yAxis_f);
     double calculateTheAngleToXaxis(double gradient_f);
     double calculateTheAngleEpsilon(double gradient_f, double gradient_g);
     String calculateTheInterface(double n_f1, double m_f2, double gradiend_f1, double gradiend_f2);

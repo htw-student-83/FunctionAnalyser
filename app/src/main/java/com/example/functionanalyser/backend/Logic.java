@@ -4,8 +4,9 @@ public class Logic implements VertragFirstDimension, VertragSecondDimension {
 
 
     @Override
-    public double calculateTheIntersectionWithXaxis(double steigung, double n) {
-        return 0;
+    public String calculateTheIntersectionWithXaxis(double gradient_f, double n) {
+        double x_point = -n/gradient_f;
+        return "("+Math.round(x_point * 100) / 100.+"/0)";
     }
 
     @Override
@@ -15,22 +16,51 @@ public class Logic implements VertragFirstDimension, VertragSecondDimension {
 
     @Override
     public String calculateTheParallelFunction(double gradient_f1, double x, double y) {
-        return null;
+        double y_intersection = y - (gradient_f1 * x);
+        double y_intersectionRound = Math.round(y_intersection*100) / 100.;
+        if(y_intersectionRound<0){
+            return gradient_f1 + "x" + y_intersectionRound;
+        }else{
+            return gradient_f1 + "x+" + y_intersectionRound;
+        }
     }
 
     @Override
-    public double calculateTheIntersectionWithYaxis(double intersection_yAxis_f) {
-        return 0;
+    public String calculateTheIntersectionWithYaxis(double intersection_yAxis_f) {
+        return "(0/"+intersection_yAxis_f+")";
     }
 
     @Override
     public double calculateTheAngleToXaxis(double gradient_f) {
-        return 0;
+        // ist die Steigung als Winkel < 0?
+        // dann [180° - die Steigung als Winkel] anwenden
+        if(gradient_f<0){
+            double radiend = Math.atan(gradient_f);
+            double angel = Math.toDegrees(radiend);
+            double angelRound = Math.round(angel*100)/100.;
+            double postiveAngelRound = angelRound*(-1);
+            return  180 - postiveAngelRound;
+        }else{
+            double radiend = Math.atan(gradient_f);
+            double angel = Math.toDegrees(radiend);
+            return Math.round(angel*100)/100.;
+        }
     }
 
     @Override
     public double calculateTheAngleEpsilon(double gradient_f, double gradient_g) {
-        return 0;
+        double angelBetweenFunction = 0.0;
+        double angeldifferent = 0.0;
+        double angleToXaxis_f = calculateTheAngleToXaxis(gradient_f);
+        double angleToXaxis_g = calculateTheAngleToXaxis(gradient_g);
+        if(angleToXaxis_f > angleToXaxis_g){
+            angeldifferent = angleToXaxis_f - angleToXaxis_g;
+            angelBetweenFunction = Math.round(angeldifferent * 100) / 100.;
+        }else {
+            angeldifferent =  angleToXaxis_g - angleToXaxis_f;
+            angelBetweenFunction = Math.round(angeldifferent * 100) / 100.;
+        }
+        return angelBetweenFunction;
     }
 
     @Override

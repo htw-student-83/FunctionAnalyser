@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
  *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
-public class ExampleUnitTest {
+public class LogicTest {
     @Test
     public void addition_isCorrect() {
         assertEquals(4, 2 + 2);
@@ -29,8 +29,8 @@ public class ExampleUnitTest {
     public void calculateTheIntersectionWithXaxisTest() {
         double steigung = 2.0;
         double intersection_yAxis = 1.0;
-        double intersection_x = calulatorFirstDimension.calculateTheIntersectionWithXaxis(steigung, intersection_yAxis);
-        Assert.assertEquals(intersection_x, -0.5);
+        String intersection = calulatorFirstDimension.calculateTheIntersectionWithXaxis(steigung, intersection_yAxis);
+        Assert.assertEquals("(-0.5/0)",intersection);
     }
 
 
@@ -38,8 +38,8 @@ public class ExampleUnitTest {
     public void calculateTheIntersectionWithXaxisTest2() {
         double steigung = 2.0;
         double intersection_yAxis = -1.0;
-        double intersection_x = calulatorFirstDimension.calculateTheIntersectionWithXaxis(steigung, intersection_yAxis);
-        Assert.assertEquals(intersection_x, 0.5);
+        String intersection = calulatorFirstDimension.calculateTheIntersectionWithXaxis(steigung, intersection_yAxis);
+        Assert.assertEquals("(0.5/0)", intersection);
     }
 
 
@@ -47,40 +47,40 @@ public class ExampleUnitTest {
     public void calculateTheIntersectionWithXaxis3() {
         double steigung = -2.0;
         double intersection_yAxis = 1.0;
-        double intersection_x = calulatorFirstDimension.calculateTheIntersectionWithXaxis(steigung, intersection_yAxis);
-        Assert.assertEquals(intersection_x, 0.5);
+        String intersection = calulatorFirstDimension.calculateTheIntersectionWithXaxis(steigung, intersection_yAxis);
+        Assert.assertEquals("(0.5/0)", intersection);
     }
 
     @Test
     public void calculateTheIntersectionWithXaxis4() {
         double steigung = -2.0;
         double intersection_yAxis = -1.0;
-        double intersection_x = calulatorFirstDimension.calculateTheIntersectionWithXaxis(steigung, intersection_yAxis);
-        Assert.assertEquals(intersection_x, -0.5);
+        String intersection = calulatorFirstDimension.calculateTheIntersectionWithXaxis(steigung, intersection_yAxis);
+        Assert.assertEquals("(-0.5/0)", intersection);
     }
 
     @Test
     public void calculateTheIntersectionWithXaxis5() {
         double steigung = -2.5;
         double intersection_yAxis = -1.5;
-        double intersection_x = calulatorFirstDimension.calculateTheIntersectionWithXaxis(steigung, intersection_yAxis);
-        Assert.assertEquals(intersection_x, -0.6);
+        String intersection = calulatorFirstDimension.calculateTheIntersectionWithXaxis(steigung, intersection_yAxis);
+        Assert.assertEquals("(-0.6/0)",intersection);
     }
 
     @Test
     public void calculateTheIntersectionWithXaxis6() {
         double steigung = -2.5;
         double intersection_yAxis = -1.0;
-        double intersection_x = calulatorFirstDimension.calculateTheIntersectionWithXaxis(steigung, intersection_yAxis);
-        Assert.assertEquals(intersection_x, -0.4);
+        String intersection = calulatorFirstDimension.calculateTheIntersectionWithXaxis(steigung, intersection_yAxis);
+        Assert.assertEquals("(-0.4/0)",intersection);
     }
 
     @Test
     public void calculateTheIntersectionWithXaxis7() {
         double steigung = -2.0;
         double intersection_yAxis = -1.5;
-        double intersection_x = calulatorFirstDimension.calculateTheIntersectionWithXaxis(steigung, intersection_yAxis);
-        Assert.assertEquals(intersection_x, -0.75);
+        String intersection = calulatorFirstDimension.calculateTheIntersectionWithXaxis(steigung, intersection_yAxis);
+        Assert.assertEquals("(-0.75/0)", intersection);
     }
 
     @Test
@@ -174,8 +174,8 @@ public class ExampleUnitTest {
     @Test
     public void calculateTheAngle() {
         double gradient_f = 2.0;
-        double angelBetweenFunctions = calulatorFirstDimension.calculateTheAngleToXaxis(gradient_f);
-        Assert.assertEquals(angelBetweenFunctions, 63.43);
+        String angelBetweenFunctions = calulatorFirstDimension.calculateTheAngleToXaxis(gradient_f);
+        Assert.assertEquals("63.43°",angelBetweenFunctions);
     }
 
     @Test
@@ -209,31 +209,31 @@ public class ExampleUnitTest {
     @Test
     public void calculateTheIntersectionWithYaxisTest() {
         double intersection_yAxis_f = 1.0;
-        double intersectionPoint = calulatorFirstDimension.calculateTheIntersectionWithYaxis(intersection_yAxis_f);
-        Assert.assertEquals(intersectionPoint, 1.0);
+        String intersectionPoint = calulatorFirstDimension.calculateTheIntersectionWithYaxis(intersection_yAxis_f);
+        Assert.assertEquals("(0/1.0)",intersectionPoint);
     }
 
     @Test
     public void calculateTheIntersectionWithYaxisTest2() {
         double intersection_yAxis_f = -1.0;
-        double intersectionPoint = calulatorFirstDimension.calculateTheIntersectionWithYaxis(intersection_yAxis_f);
-        Assert.assertEquals(intersectionPoint, -1.0);
+        String intersectionPoint = calulatorFirstDimension.calculateTheIntersectionWithYaxis(intersection_yAxis_f);
+        Assert.assertEquals("(0/-1.0)",intersectionPoint);
     }
 
 
     @Test
     public void calculateTheIntersectionWithYaxisTest3() {
         double intersection_yAxis_f = 1.5;
-        double intersectionPoint = calulatorFirstDimension.calculateTheIntersectionWithYaxis(intersection_yAxis_f);
-        Assert.assertEquals(intersectionPoint, 1.5);
+        String intersectionPoint = calulatorFirstDimension.calculateTheIntersectionWithYaxis(intersection_yAxis_f);
+        Assert.assertEquals("(0/1.5)", intersectionPoint);
     }
 
 
     @Test
     public void calculateTheIntersectionWithYaxisTest4() {
         double intersection_yAxis_f = -1.5;
-        double intersectionPoint = calulatorFirstDimension.calculateTheIntersectionWithYaxis(intersection_yAxis_f);
-        Assert.assertEquals(intersectionPoint, -1.5);
+        String intersectionPoint = calulatorFirstDimension.calculateTheIntersectionWithYaxis(intersection_yAxis_f);
+        Assert.assertEquals("(0/-1.5)",intersectionPoint);
     }
 
     @Test
