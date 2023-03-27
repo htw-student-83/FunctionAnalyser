@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3D5AFE"
+    android:backgroundTint="#FF3D5AFE"
+    tools:context=".frontend.implementations.MainMenuActivity">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#59E1F1"
+        android:text="@string/interface_with_x_axis"
+        android:textColor="#100F0F"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="176dp"
+        android:backgroundTint="#59E1F1"
+        android:text="parallelim function"
+        android:textColor="#100F0F"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="240dp"
+        android:backgroundTint="#59E1F1"
+        android:text="gradiend of functions"
+        android:textColor="#100F0F"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="304dp"
+        android:backgroundTint="#59E1F1"
+        android:text="interface point"
+        android:textColor="#100F0F"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="368dp"
+        android:backgroundTint="#59E1F1"
+        android:text="orthogonal function"
+        android:textColor="#100F0F"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="432dp"
+        android:backgroundTint="#59E1F1"
+        android:text="angel of gradiends"
+        android:textColor="#100F0F"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="496dp"
+        android:backgroundTint="#59E1F1"
+        android:text="angel between functions"
+        android:textColor="#121111"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="560dp"
+        android:backgroundTint="#59E1F1"
+        android:text="All propertries"
+        android:textColor="#121111"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="112dp"
+        android:backgroundTint="#59E1F1"
+        android:text="interface with Y-Axis"
+        android:textColor="#100F0F"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="285dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="646dp"
+        android:backgroundTint="#E7E8E4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00E5FF"
+    tools:context=".frontend.implementations.MainInterfaceYaxisActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="644dp"
+        android:backgroundTint="#EBD6DCD9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="120dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="406dp"
+        android:layout_marginRight="30dp"
+        android:background="#FFEEEFEB"
+        android:paddingVertical="1dp"
+        android:text="(0/y)"
+        android:textAlignment="center"
+        android:textColor="#171616"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="120dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="344dp"
+        android:layout_marginEnd="25dp"
+        android:background="#EEEFEB"
+        android:paddingVertical="1dp"
+        android:text="(0/y)"
+        android:textAlignment="center"
+        android:textColor="#171616"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.700"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="403dp"
+        android:layout_marginLeft="-132dp"
+        android:text="Second function:"
+        android:textColor="#191818"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-155dp"
+        android:layout_marginTop="342dp"
+        android:text="First function:"
+        android:textColor="#191818"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="103dp"
+        android:fontFamily="serif"
+        android:text="Interface With the Y-Axis"
+        android:textColor="#121010"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.functionanalyser.frontend;
+package com.example.functionanalyser.frontend.implementations;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -29,7 +29,6 @@ public class MainFirstActivity extends AppCompatActivity {
     public void checkRadioButton(){
         int checkID = radioGroup.getCheckedRadioButtonId();
         if(checkID == -1){
-            showNothingToast(checkID);
         }else if((checkID%2)!=0){
             Intent newActivity = new Intent(MainFirstActivity.this, MainSecondActivity.class);
             startActivityForResult(newActivity, code);

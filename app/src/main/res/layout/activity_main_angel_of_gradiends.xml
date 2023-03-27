@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00E5FF"
+    tools:context=".frontend.implementations.MainAngelOfGradiendsActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="644dp"
+        android:backgroundTint="#EBD6DCD9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="403dp"
+        android:layout_marginEnd="-150dp"
+        android:background="#E7E8E4"
+        android:paddingVertical="1dp"
+        android:text="24.5°"
+        android:textAlignment="center"
+        android:textColor="#171616"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="345dp"
+        android:layout_marginEnd="45dp"
+        android:background="#E7E8E4"
+        android:paddingVertical="1dp"
+        android:text="22.3°"
+        android:textAlignment="center"
+        android:textColor="#171616"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="103dp"
+        android:fontFamily="serif"
+        android:text="Angel of Gradiends"
+        android:textColor="#151515"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-40dp"
+        android:layout_marginTop="347dp"
+        android:text="First function:"
+        android:textColor="#100F0F"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.283"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-40dp"
+        android:layout_marginTop="405dp"
+        android:text="Second function:"
+        android:textColor="#131313"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

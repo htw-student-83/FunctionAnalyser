@@ -4,20 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EDEBEB"
-    tools:context=".frontend.MainSecondActivity">
+    android:background="#B0E8CD"
+    tools:context=".frontend.implementations.MainSecondActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="364dp"
-        android:text="Exponent 2 ausgewählt."
+        android:layout_marginTop="72dp"
+        android:fontFamily="serif"
+        android:text="Quadratic functions"
         android:textAlignment="center"
         android:textColor="#121111"
         android:textSize="24sp"
-        android:textStyle="bold"
+        android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
