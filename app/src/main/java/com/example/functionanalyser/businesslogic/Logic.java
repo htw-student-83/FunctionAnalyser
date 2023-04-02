@@ -1,4 +1,4 @@
-package com.example.functionanalyser.backend;
+package com.example.functionanalyser.businesslogic;
 
 public class Logic implements VertragFirstDimension, VertragSecondDimension {
 
@@ -21,7 +21,7 @@ public class Logic implements VertragFirstDimension, VertragSecondDimension {
         if(y_intersectionRound<0){
             return gradient_f1 + "x" + y_intersectionRound;
         }else{
-            return gradient_f1 + "x+" + y_intersectionRound;
+            return gradient_f1 + "x + " + y_intersectionRound;
         }
     }
 
@@ -70,7 +70,14 @@ public class Logic implements VertragFirstDimension, VertragSecondDimension {
 
     @Override
     public String calculateTheOrthogonalLine(double gradient_f, double x_value, double y_value) {
-        return null;
+        double reziprokeValue = -1/gradient_f;
+        double reziprokeValueRound = Math.round(reziprokeValue*100)/100.;
+        double y_intersection =  y_value - (reziprokeValueRound * x_value);
+        if(y_intersection<0){
+            return reziprokeValueRound + "x " + y_intersection;
+        }else{
+            return reziprokeValueRound + "x + " + y_intersection;
+        }
     }
 
     @Override

@@ -12,7 +12,6 @@ import android.widget.Toast;
 import com.example.functionanalyser.R;
 
 public class MainThirdActivity extends AppCompatActivity {
-    int code = 23;
     private EditText editCoefficient1, editCoefficient2, editCoefficient3, editCoefficient4;
 
     @Override
@@ -40,11 +39,11 @@ public class MainThirdActivity extends AppCompatActivity {
                     String coefficient4 = editCoefficient4.getText().toString();
 
                     Intent newActivity = new Intent(MainThirdActivity.this, MainMenuActivity.class);
-                    newActivity.putExtra("coefficient1", coefficient);
+                    newActivity.putExtra("coefficient", coefficient);
                     newActivity.putExtra("coefficient2", coefficient2);
                     newActivity.putExtra("coefficient3", coefficient3);
                     newActivity.putExtra("coefficient4", coefficient4);
-                    startActivityForResult(newActivity, code);
+                    startActivity(newActivity);
                 }else{
                     showToast();
                 }
@@ -81,7 +80,7 @@ public class MainThirdActivity extends AppCompatActivity {
 
     public void moveBack(){
         Intent newActivity = new Intent(MainThirdActivity.this, MainFirstActivity.class);
-        startActivityForResult(newActivity, code);
+        startActivity(newActivity);
     }
 
     public void showToast(){

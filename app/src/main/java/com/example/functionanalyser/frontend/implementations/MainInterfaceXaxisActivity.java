@@ -4,18 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.example.functionanalyser.R;
-import com.example.functionanalyser.backend.Logic;
-
-import java.text.StringCharacterIterator;
+import com.example.functionanalyser.businesslogic.Logic;
 
 public class MainInterfaceXaxisActivity extends AppCompatActivity {
-
-    int code = 22;
 
     private TextView outputText, outputText2;
 
@@ -28,7 +23,7 @@ public class MainInterfaceXaxisActivity extends AppCompatActivity {
         outputText2 = findViewById(R.id.textView12);
 
         Intent intent = getIntent();
-        String c1 = intent.getStringExtra("coefficient1");
+        String c1 = intent.getStringExtra("coefficient");
         String c2 = intent.getStringExtra("coefficient2");
         String c3 = intent.getStringExtra("coefficient3");
         String c4 = intent.getStringExtra("coefficient4");
@@ -56,6 +51,6 @@ public class MainInterfaceXaxisActivity extends AppCompatActivity {
 
     public void goBackToMenu(){
         Intent newActivity = new Intent(MainInterfaceXaxisActivity.this, MainMenuActivity.class);
-        startActivityForResult(newActivity, code);
+        startActivity(newActivity);
     }
 }

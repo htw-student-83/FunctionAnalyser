@@ -1,4 +1,4 @@
-package com.example.functionanalyser.backend;
+package com.example.functionanalyser.businesslogic;
 
 public interface VertragFirstDimension {
     String calculateTheIntersectionWithXaxis(double steigung, double n);

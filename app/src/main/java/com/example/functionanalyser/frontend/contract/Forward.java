@@ -1,12 +1,13 @@
 package com.example.functionanalyser.frontend.contract;
 
+import java.io.IOException;
+
 public interface Forward {
-    void goToInterfaceWithX(String coefficient, String coefficient2, String coefficient3, String coefficient4);
-    void goToInterfaceWithY(String coefficient, String coefficient2);
-    void goToParallelFunction();
+    void goToInterfaceWithX() throws IOException;
+    void goToInterfaceWithY() throws IOException;
     void goToGradiendOfFunction();
     void goToInterfacePoint();
-    void goToOrthogonalFunction();
-    void goToAngelOfGradiends(String coefficient1, String coefficient3);
-    void goToAngelBetweenFunctions(String coefficient1, String coefficient3);
+    void goToAdditionalPageForOrthogonalFunction();
+    void goToAngelOfGradiends() throws IOException;
+    void goToAngelBetweenFunctions() throws IOException;
 }

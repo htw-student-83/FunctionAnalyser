@@ -1,8 +1,8 @@
 package com.example.functionanalyser;
 
-import com.example.functionanalyser.backend.Logic;
-import com.example.functionanalyser.backend.VertragFirstDimension;
-import com.example.functionanalyser.backend.VertragSecondDimension;
+import com.example.functionanalyser.businesslogic.Logic;
+import com.example.functionanalyser.businesslogic.VertragFirstDimension;
+import com.example.functionanalyser.businesslogic.VertragSecondDimension;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -145,7 +145,7 @@ public class LogicTest {
     public void calculateTheGradient() {
         double gradient_f = -2.4;
         double gradient = calulatorFirstDimension.calculateTheGradient(gradient_f);
-        Assert.assertEquals(gradient, -2.4);
+        Assert.assertEquals(-2.4,gradient,0);
     }
 
 
@@ -153,14 +153,14 @@ public class LogicTest {
     public void calculateTheGradient2() {
         double gradient_f = -2.0;
         double gradient = calulatorFirstDimension.calculateTheGradient(gradient_f);
-        Assert.assertEquals(gradient, -2.0);
+        Assert.assertEquals(-2.0, gradient,0.0);
     }
 
     @Test
     public void calculateTheGradient3() {
         double gradient_f = 2.0;
         double gradient = calulatorFirstDimension.calculateTheGradient(gradient_f);
-        Assert.assertEquals(gradient, 2.0);
+        Assert.assertEquals(2.0, gradient,0);
     }
 
 
@@ -168,14 +168,14 @@ public class LogicTest {
     public void calculateTheGradient4() {
         double gradient_f = -2.2;
         double gradient = calulatorFirstDimension.calculateTheGradient(gradient_f);
-        Assert.assertEquals(gradient, -2.2);
+        Assert.assertEquals(gradient, -2.2, 0);
     }
 
     @Test
     public void calculateTheAngle() {
         double gradient_f = 2.0;
-        String angelBetweenFunctions = calulatorFirstDimension.calculateTheAngleToXaxis(gradient_f);
-        Assert.assertEquals("63.43°",angelBetweenFunctions);
+        double angelOfFunction = calulatorFirstDimension.calculateTheAngleToXaxis(gradient_f);
+        Assert.assertEquals(63.43, angelOfFunction, 0);
     }
 
     @Test
@@ -183,7 +183,7 @@ public class LogicTest {
         double gradient_f = -2.0;
         double gradient_g = -3.0;
         double angelEpsilon = calulatorFirstDimension.calculateTheAngleEpsilon(gradient_f, gradient_g);
-        Assert.assertEquals(angelEpsilon,8.14);
+        Assert.assertEquals(angelEpsilon,8.14, 0);
     }
 
     @Test
@@ -191,7 +191,7 @@ public class LogicTest {
         double gradient_f = 2.0;
         double gradient_g = 3.0;
         double angelEpsilon = calulatorFirstDimension.calculateTheAngleEpsilon(gradient_f, gradient_g);
-        Assert.assertEquals(angelEpsilon, 8.14);
+        Assert.assertEquals(angelEpsilon, 8.14, 0);
     }
 
 

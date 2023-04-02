@@ -8,11 +8,9 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.example.functionanalyser.R;
-import com.example.functionanalyser.backend.Logic;
+import com.example.functionanalyser.businesslogic.Logic;
 
 public class MainInterfaceYaxisActivity extends AppCompatActivity {
-
-    int code = 22;
 
     private TextView outputText, outputText2;
 
@@ -35,7 +33,7 @@ public class MainInterfaceYaxisActivity extends AppCompatActivity {
 
     public void goBackToMenu(){
         Intent newActivity = new Intent(MainInterfaceYaxisActivity.this, MainMenuActivity.class);
-        startActivityForResult(newActivity, code);
+        startActivity(newActivity);
     }
 
     public void proceedInitialData(String coefficiend, String coefficiend2){

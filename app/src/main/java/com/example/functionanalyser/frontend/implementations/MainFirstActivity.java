@@ -13,7 +13,6 @@ import com.example.functionanalyser.R;
 public class MainFirstActivity extends AppCompatActivity {
 
     private RadioGroup radioGroup;
-    private int code = 22;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,10 +30,10 @@ public class MainFirstActivity extends AppCompatActivity {
         if(checkID == -1){
         }else if((checkID%2)!=0){
             Intent newActivity = new Intent(MainFirstActivity.this, MainSecondActivity.class);
-            startActivityForResult(newActivity, code);
+            startActivity(newActivity);
        }else{
             Intent newActivity = new Intent(MainFirstActivity.this, MainThirdActivity.class);
-            startActivityForResult(newActivity, code);
+            startActivity(newActivity);
         }
     }
 

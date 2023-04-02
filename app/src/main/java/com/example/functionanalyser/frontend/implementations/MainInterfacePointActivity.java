@@ -10,7 +10,6 @@ import com.example.functionanalyser.R;
 
 public class MainInterfacePointActivity extends AppCompatActivity {
 
-    int code = 22;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +22,6 @@ public class MainInterfacePointActivity extends AppCompatActivity {
 
     public void goBackToMenu(){
         Intent newActivity = new Intent(MainInterfacePointActivity.this, MainMenuActivity.class);
-        startActivityForResult(newActivity, code);
+        startActivity(newActivity);
     }
 }

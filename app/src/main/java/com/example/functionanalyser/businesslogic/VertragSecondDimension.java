@@ -1,4 +1,4 @@
-package com.example.functionanalyser.backend;
+package com.example.functionanalyser.businesslogic;
 
 public interface VertragSecondDimension {
     String calculateTheIntersectionWithXaxis2DABC(double a, double b, double c);
