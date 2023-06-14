@@ -1,4 +1,4 @@
-package com.example.functionanalyser.frontend.login;
+package com.example.functionanalyser.login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,17 +7,14 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.functionanalyser.R;
-import com.example.functionanalyser.frontend.implementations.MainAdditionalCoordinateActivity;
 import com.example.functionanalyser.frontend.implementations.MainFirstActivity;
-import com.example.functionanalyser.frontend.implementations.MainKindOfFunctionsActivity;
-import com.example.functionanalyser.frontend.implementations.MainThirdActivity;
 
 public class MainLoginActivity extends AppCompatActivity {
 
     private EditText editPassword;
-    private TextView outputText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +22,6 @@ public class MainLoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main_login);
 
         editPassword = findViewById(R.id.editTextNumberPassword2);
-        outputText = findViewById(R.id.textView55);
 
         Button registration = findViewById(R.id.button16);
         Button forgotPassword = findViewById(R.id.button18);
@@ -40,12 +36,12 @@ public class MainLoginActivity extends AppCompatActivity {
         String code = editPassword.getText().toString();
         String[] codeArray = code.split("");
         if(code.isEmpty()){
-            outputText.setText("Code eingeben!");
-        }else if(codeArray.length<6){
-            outputText.setText("Pin zu kurz");
-        }else if(codeArray.length>6){
-            outputText.setText("Pin zu lang");
+            Toast.makeText(this,"Input your PIN!", Toast.LENGTH_SHORT).show();
+        }else if(codeArray.length!=6){
+            Toast.makeText(this,"PIN is invalid", Toast.LENGTH_SHORT).show();
         }else{
+            // - compare the inputPIN with all PINS in the dabase
+            // - if the code is already in the db, than forward to the next page, otherwise Toast...
             Intent newActivity = new Intent(MainLoginActivity.this, MainFirstActivity.class);
             startActivity(newActivity);
         }

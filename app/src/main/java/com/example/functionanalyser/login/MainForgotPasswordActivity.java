@@ -1,4 +1,4 @@
-package com.example.functionanalyser.frontend.login;
+package com.example.functionanalyser.login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,26 +9,24 @@ import android.util.Patterns;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.functionanalyser.R;
 
 public class MainForgotPasswordActivity extends AppCompatActivity {
 
     private EditText email;
-    private TextView output;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_forgot_password);
         email = findViewById(R.id.editTextTextEmailAddress2);
-        output = findViewById(R.id.textView57);
 
         Button sendButton = findViewById(R.id.button19);
         sendButton.setOnClickListener(view -> {
             try {
                 sendPassword();
-                goBackToLogin();
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
@@ -40,10 +38,10 @@ public class MainForgotPasswordActivity extends AppCompatActivity {
         // - The PIN will read from the database by the emailaddress
         String pinCode = "10";
         if (emailaddress.isEmpty()) {
-            output.setText("Please input your address!");
+            Toast.makeText(this,"Please input your address!", Toast.LENGTH_SHORT).show();
         } else {
             if (!checkMailAddress(emailaddress)) {
-                output.setText("Your mail is invalid.");
+                Toast.makeText(this,"Your mail is invalid.", Toast.LENGTH_SHORT).show();
             } else {
                 // - PIN will send to the exists mail address
                 //  - Error -> the email wouldn't send, why?
@@ -53,6 +51,7 @@ public class MainForgotPasswordActivity extends AppCompatActivity {
                 intent.putExtra(Intent.EXTRA_TEXT, pinCode);
                 if (intent.resolveActivity(getPackageManager()) != null) {
                     startActivity(intent);
+                    goBackToLogin();
                 }
             }
         }

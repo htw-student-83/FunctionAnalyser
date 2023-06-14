@@ -1,4 +1,4 @@
-package com.example.functionanalyser.frontend.login;
+package com.example.functionanalyser.login;
 
 import android.content.ContentValues;
 import android.content.Context;

@@ -12,7 +12,7 @@
         android:theme="@style/Theme.FunctionAnalyser"
         tools:targetApi="31">
         <activity
-            android:name=".frontend.login.MainLoginActivity"
+            android:name=".login.MainLoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".frontend.login.MainRegistrationActivity"
+            android:name=".login.MainRegistrationActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,7 +30,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".frontend.login.MainForgotPasswordActivity"
+            android:name=".login.MainForgotPasswordActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
